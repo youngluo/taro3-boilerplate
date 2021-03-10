@@ -1,0 +1,96 @@
+{
+  "name": "customer-taro3",
+  "version": "2.0.0",
+  "private": true,
+  "description": "",
+  "templateInfo": {
+    "name": "redux",
+    "typescript": true,
+    "css": "sass"
+  },
+  "scripts": {
+    "start": "yarn dev:weapp",
+    "commit": "git add -A && git-cz",
+    "build:weapp": "taro build --type weapp",
+    "build:swan": "taro build --type swan",
+    "build:alipay": "taro build --type alipay",
+    "build:tt": "taro build --type tt",
+    "build:h5": "taro build --type h5",
+    "build:rn": "taro build --type rn",
+    "build:qq": "taro build --type qq",
+    "build:jd": "taro build --type jd",
+    "build:quickapp": "taro build --type quickapp",
+    "dev:weapp": "yarn build:weapp -- --watch",
+    "dev:swan": "yarn build:swan -- --watch",
+    "dev:alipay": "yarn build:alipay -- --watch",
+    "dev:tt": "yarn build:tt -- --watch",
+    "dev:h5": "yarn build:h5 -- --watch",
+    "dev:rn": "yarn build:rn -- --watch",
+    "dev:qq": "yarn build:qq -- --watch",
+    "dev:jd": "yarn build:jd -- --watch",
+    "dev:quickapp": "yarn build:quickapp -- --watch"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.1.2",
+    "@tarojs/react": "3.1.2",
+    "@tarojs/runtime": "3.1.2",
+    "@tarojs/taro": "3.1.2",
+    "lodash": "^4.17.21",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@tarojs/cli": "^3.1.2",
+    "@tarojs/mini-runner": "3.1.2",
+    "@tarojs/webpack-runner": "3.1.2",
+    "@types/react": "^17.0.2",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "babel-preset-taro": "3.1.2",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-taro": "3.1.2",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
+    "standard-version": "^9.1.1",
+    "stylelint": "9.3.0",
+    "typescript": "^4.1.0"
+  }
+}
