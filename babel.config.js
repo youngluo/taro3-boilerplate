@@ -7,5 +7,6 @@ module.exports = {
       framework: 'react',
       ts: true
     }]
-  ]
+  ],
+  plugins: ['lodash']
 }

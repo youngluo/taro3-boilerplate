@@ -1,0 +1,16 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.lineHeight": 24,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+  "eslint.options": {
+    "extensions": [".js", ".vue", ".tsx", ".ts"]
+  },
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true
+}
