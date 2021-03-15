@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb-base", "taro/react"],
+  "extends": ["airbnb-base", "taro/react", "plugin:prettier/recommended"],
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
@@ -12,10 +12,17 @@
         "ImportDeclaration": "never"
       }
     ],
-    "react/jsx-max-props-per-line": [1, { "maximum": 1 }],
     "react/jsx-first-prop-new-line": ["error", "multiline"],
     "arrow-parens": ["error", "as-needed"],
     "comma-dangle": ["error", "never"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ]
   }
 }
