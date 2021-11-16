@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "customer-taro3",
+  "projectname": "taro3-boilerplate",
   "description": "",
   "appid": "touristappid",
   "setting": {

@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "taro",
+      {
+        "framework": "react",
+        "ts": true
+      }
+    ]
+  ],
+  "plugins": ["lodash"]
+}
